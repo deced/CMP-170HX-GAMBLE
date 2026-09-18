@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CMP 170HX: Silicon Gamble</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <main class="game-shell">
+    <header>
+      <div class="brand"><span class="chip">CMP</span><div><h1>SILICON GAMBLE</h1><p>170HX UNLOCKING ADVENTURE</p></div></div>
+      <button id="resetButton" class="icon-button" title="Reset saved game" aria-label="Reset saved game">↻</button>
+    </header>
+
+    <section class="hud" aria-label="Player status">
+      <div class="stat"><small>WALLET</small><strong id="balance">$10,000</strong></div>
+      <div class="stat target"><small>TOTAL VRAM</small><strong><span id="vram">0</span> / 64 GB</strong></div>
+      <div class="stat"><small>MISSION</small><strong id="mission">BUILD 64 GB</strong></div>
+    </section>
+
+    <section class="intro panel">
+      <div class="mascot" aria-hidden="true"><i></i><i></i><b></b></div>
+      <div><h2>WELCOME, GPU HUNTER</h2><p>Build a <b>64 GB CMP rig</b>. Reliable GPUs are tempting. That’s how they get you.</p></div>
+    </section>
+
+    <section class="shop panel">
+      <div class="section-title"><h2>THE SUSPICIOUS GPU MARKET</h2><span>SELECT A CARD</span></div>
+      <div class="products">
+        <article class="product normal"><div class="gpu gpu-5090"><span>5090</span></div><h3>RTX 5090</h3><p>32 GB · Overpriced</p><button data-card="5090" data-price="6000">BUY $6,000</button></article>
+        <article class="product disabled"><div class="gpu gpu-4090"><span>4090</span></div><h3>RTX 4090 48 GB</h3><p>48 GB · Dream listing</p><button disabled>OUT OF STOCK</button></article>
+        <article class="product normal"><img class="gpu-image" src="a100.png" alt="Tesla A100 graphics card"><h3>Tesla A100</h3><p>80 GB · Too reliable</p><button data-card="A100" data-price="12000">BUY $12,000</button></article>
+        <article class="product disabled"><div class="gpu gpu-3090"><span>3090</span></div><h3>RTX 3090</h3><p>24 GB · A good option</p><button disabled>OUT OF STOCK</button></article>
+        <article class="product normal"><div class="gpu gpu-v100"><span>V100</span></div><h3>Tesla V100</h3><p>32 GB · Too old</p><button data-card="V100" data-price="800">BUY $800</button></article>
+        <article class="product featured"><div class="gpu gpu-cmp"><span>CMP</span><em>?</em></div><h3>CMP 170HX</h3><p>??? GB · No warranty</p><button id="cmpBuy" data-card="CMP" data-price="2500">BUY $2,500</button></article>
+      </div>
+    </section>
+
+    <section class="inventory panel">
+      <div class="section-title"><h2>YOUR RIG</h2><span id="inventoryCount">0 ITEMS</span></div>
+      <div id="inventory" class="inventory-grid"><p class="empty">Your rig is empty. Your wallet still has hope.</p></div>
+    </section>
+    <p class="footer-note">THE HOUSE ALWAYS WINS. EXCEPT WHEN IT DOESN'T.</p>
+  </main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <div id="slotArea" class="slot-area hidden">
+        <p>BUYING A CMP FROM A STRANGER...</p>
+        <div class="slot-window"><div id="reel" class="reel"></div></div>
+        <small>SPECIAL OFFER FOR YOU, DEAR 🌹</small>
+      </div>
+      <div id="terminalArea" class="terminal-area hidden"><div class="terminal-head"><span>MEMORY DIAGNOSTICS</span><span class="terminal-led">●</span></div><pre id="terminalOutput"></pre></div>
+      <div id="modalMessage" class="modal-message hidden">
+        <div id="resultArt" class="result-art"></div>
+        <h2 id="modalTitle"></h2><p id="modalText"></p>
+        <button id="modalAction">CONTINUE</button><button id="modalSecondary" class="secondary hidden">KEEP</button>
+      </div>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+:root{--ink:#17132c;--deep:#080713;--panel:#201a3b;--purple:#7149ba;--hot:#ff4f92;--gold:#ffcc46;--mint:#66f6ba;--muted:#a59bc5}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--deep);color:#f8f4ff;font-family:'VT323',monospace;font-size:22px;background-image:radial-gradient(#29234b 1px,transparent 1px);background-size:8px 8px}.scanlines{position:fixed;z-index:5;inset:0;pointer-events:none;opacity:.13;background:repeating-linear-gradient(0deg,transparent 0 3px,#000 3px 4px)}.game-shell{width:min(1080px,calc(100% - 26px));margin:auto;padding:28px 0 35px}header{display:flex;align-items:center;justify-content:space-between;margin-bottom:21px}.brand{display:flex;align-items:center;gap:15px}.chip{background:var(--hot);color:#fff;padding:11px 9px;border:4px solid #fff;box-shadow:5px 5px 0 #87234e;font-family:'Press Start 2P';font-size:15px}h1,h2,h3,button,strong{font-family:'Press Start 2P',monospace}h1{font-size:20px;margin:0 0 7px;color:var(--gold);line-height:1.4;text-shadow:3px 3px #44255c}.brand p{font-size:17px;margin:0;color:var(--muted)}.icon-button{font-size:23px;padding:10px 13px;border:3px solid var(--muted);background:#17132c;color:white;cursor:pointer}.hud{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:14px}.stat{padding:14px 16px;background:#16122b;border:3px solid #393158;box-shadow:4px 4px 0 #06050d}.stat small{display:block;color:var(--muted);font-family:'Press Start 2P';font-size:10px;margin-bottom:9px}.stat strong{font-size:16px;color:var(--mint)}.target strong{color:var(--gold)}.panel{background:var(--panel);border:4px solid #4d4071;box-shadow:7px 7px 0 #07050e;padding:18px;margin-bottom:16px}.intro{display:flex;align-items:center;gap:20px;background:linear-gradient(100deg,#2c2151,#17132c)}.intro h2,.section-title h2{font-size:14px;line-height:1.5;color:var(--gold);margin:0 0 9px}.intro p{margin:0;line-height:1.1;color:#ddd5f7}.mascot{flex:none;width:75px;height:61px;background:#84e87d;border:5px solid #17132c;position:relative;box-shadow:inset -8px -8px #4fa15d}.mascot:before,.mascot:after{content:"";position:absolute;background:#17132c;width:9px;height:9px;top:16px}.mascot:before{left:13px}.mascot:after{right:13px}.mascot i{position:absolute;background:#17132c;width:6px;height:12px;top:-11px}.mascot i:first-child{left:15px}.mascot i:nth-child(2){right:15px}.mascot b{position:absolute;background:#17132c;width:22px;height:5px;bottom:13px;left:22px}.section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:13px}.section-title span{color:var(--muted);font-family:'Press Start 2P';font-size:9px}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.product{background:#151126;border:3px solid #3b3157;padding:12px;display:flex;flex-direction:column;min-height:265px}.product.featured{border-color:var(--hot);box-shadow:0 0 0 3px #713054,inset 0 0 25px #441838}.product h3{font-size:12px;line-height:1.4;margin:13px 0 7px}.product p{margin:0;color:var(--muted);font-size:19px;line-height:1.05}.product button,.modal button{margin-top:auto;padding:12px 7px;border:0;background:var(--purple);color:white;font-size:10px;line-height:1.5;cursor:pointer;box-shadow:0 4px 0 #33205e}.product button:hover,.modal button:hover{filter:brightness(1.25);transform:translateY(-1px)}.featured button{background:var(--hot);box-shadow:0 4px 0 #8f244f}.product button:disabled{background:#423b53;color:#8f889d;box-shadow:0 4px 0 #282432;cursor:not-allowed}.gpu{height:82px;position:relative;border:5px solid #0c0b15;background:#55506b;box-shadow:inset -8px -8px #2e2b40}.gpu:before{content:"";position:absolute;right:7px;top:13px;width:27px;height:27px;border-radius:50%;background:#201d2b;border:6px dotted #9992a7}.gpu span{position:absolute;left:7px;bottom:8px;font-family:'Press Start 2P';font-size:13px;color:white}.gpu-5090{background:#318554}.gpu-4090{background:#536889}.gpu-a100{background:#c98c36}.gpu-cmp{background:#924f94;border-color:#ffcf51}.gpu-cmp em{position:absolute;right:6px;bottom:3px;color:var(--gold);font:32px 'Press Start 2P'}.disabled{opacity:.55}.inventory{min-height:148px}.inventory-grid{display:flex;gap:13px;flex-wrap:wrap}.empty{color:var(--muted);margin:11px 0}.inventory-card{width:150px;border:3px solid var(--mint);padding:10px;background:#142c2b}.inventory-card .gpu{height:52px}.inventory-card h3{font-size:10px;line-height:1.4;margin:10px 0 4px}.inventory-card p{margin:0;color:var(--mint);font-family:'Press Start 2P';font-size:10px}.footer-note{text-align:center;font-family:'Press Start 2P';font-size:9px;color:#706789;margin:23px 0 0}.modal{position:fixed;z-index:10;inset:0;background:#05030bdd;display:grid;place-items:center;padding:15px}.hidden{display:none!important}.modal-box{background:#201a3b;border:5px solid var(--gold);box-shadow:9px 9px 0 #000;width:min(600px,100%);padding:24px;text-align:center}.slot-area p{font-family:'Press Start 2P';font-size:11px;color:var(--gold);line-height:1.6}.slot-window{height:150px;overflow:hidden;border:5px solid var(--hot);background:#0c0a14;position:relative;margin:20px 0}.slot-window:before{content:"";position:absolute;z-index:2;left:0;right:0;top:50%;border-top:4px solid var(--gold);border-bottom:4px solid var(--gold);height:60px;transform:translateY(-50%)}.reel{display:flex;align-items:center;height:100%;width:max-content;gap:15px;padding:0 20px;transform:translateX(0)}.reel .gpu{width:130px;height:75px;flex:none}.slot-area small{color:var(--muted);font-family:'Press Start 2P';font-size:8px}.result-art{width:105px;height:76px;margin:0 auto 22px}.brick{background:repeating-linear-gradient(0deg,#b45244 0 16px,#812e32 17px 19px);border:5px solid #592333;box-shadow:inset 0 0 0 3px #d2755a}.brick:before{content:"";display:block;width:100%;height:100%;background:repeating-linear-gradient(90deg,transparent 0 42px,#6b2930 43px 46px)}.modal-message h2{font-size:16px;line-height:1.55;color:var(--gold)}.modal-message p{font-size:24px;line-height:1.1;margin:16px auto 25px;max-width:440px}.modal-message button{padding:15px 20px;font-size:11px;background:var(--hot)}
+@media(max-width:720px){.products{grid-template-columns:repeat(2,1fr)}.product{min-height:238px}.hud{grid-template-columns:1fr}.stat{padding:11px 14px}.intro{align-items:flex-start}.game-shell{padding-top:16px}h1{font-size:16px}}@media(max-width:380px){.products{gap:7px}.product{padding:8px}.product h3{font-size:10px}.product button{font-size:8px}.gpu span{font-size:10px}.brand{gap:8px}.chip{font-size:11px}}
+/* Mobile slot safety: always reserve a visible reel viewport. */
+@media(max-width:720px){.modal{padding:8px}.modal-box{padding:15px 10px;width:100%;max-height:calc(100vh - 16px);overflow:auto}.slot-area{display:block;min-height:220px}.slot-area p{font-size:9px}.slot-window{height:130px;margin:14px 0}.reel{gap:12px;padding:0 14px}.reel .gpu,.reel .brick{width:120px;height:70px;flex:none}}
+/* The center marker is the winning position. */
+.reel .brick{width:130px;height:75px;flex:none}
+.slot-window:after{content:"";position:absolute;z-index:4;left:50%;top:4px;transform:translateX(-50%);border-left:11px solid transparent;border-right:11px solid transparent;border-top:18px solid var(--gold);filter:drop-shadow(0 2px 0 #563835);pointer-events:none}
+.inventory-card .brick{height:52px;width:100%;border-width:4px}.junk-card{border-color:#b45244;background:#342126}.junk-card p{color:#f28d72}
+.modal-message .secondary{display:block;margin:14px auto 0;background:#374267;box-shadow:0 4px 0 #1b2039}.unstable-card{border-color:#ffcc46;background:#382c18}.unstable-card p{color:#ffcc46;font-size:8px;line-height:1.4}
+.product .gpu-image{width:100%;height:82px;display:block;object-fit:contain;background:transparent;border:5px solid #0c0b15;image-rendering:pixelated}
+/* Pixel-art asset set */
+.gpu-5090{background:#0c0a14 url("5090.svg") center/contain no-repeat}.gpu-cmp{background:transparent url("170hx.png") center/contain no-repeat;image-rendering:pixelated}.gpu-5090:before,.gpu-cmp:before{display:none}.brick{background:#421f27 url("brick.svg") center/contain no-repeat}.brick:before{display:none}
+/* SVG artwork carries its own labels; do not overlay UI text on it. */
+.gpu span,.gpu em{display:none}
+.gpu-cmp{border-color:#0c0b15}
+.inventory-card .upgrade-button{width:100%;margin-top:10px;padding:9px 5px;border:0;background:#ff4f92;color:#fff;font:8px "Press Start 2P",monospace;line-height:1.5;cursor:pointer;box-shadow:0 3px 0 #8f244f}.inventory-card .upgrade-button:hover{filter:brightness(1.2)}.unstable-card .upgrade-button{background:#7149ba;box-shadow:0 3px 0 #33205e}
+.terminal-area{background:#07130d;border:3px solid #45d681;color:#72ffab;text-align:left;font:18px "VT323",monospace;box-shadow:inset 0 0 18px #164c31;margin:8px 0;min-height:220px}.terminal-head{display:flex;justify-content:space-between;padding:8px 10px;background:#164c31;color:#d4ffe5;font:8px "Press Start 2P",monospace}.terminal-led{color:#ff4f92;animation:terminal-blink .5s steps(2,end) infinite}.terminal-area pre{white-space:pre-wrap;margin:0;padding:13px;line-height:1.12}.terminal-area pre:after{content:"_";animation:terminal-blink .6s steps(2,end) infinite}@keyframes terminal-blink{50%{opacity:0}}.ewaste-card{border-color:#7b3c45;background:#2e161d;filter:saturate(.4)}.ewaste-card p{color:#ff8994!important}.ewaste-card .gpu{opacity:.55}
+.gpu-5090,.gpu-cmp{background-size:100% 100%}.product .gpu-image{object-fit:fill}
+.inventory-card .sell-button{width:100%;margin-top:10px;padding:9px 5px;border:0;background:#b45244;color:#fff;font:8px "Press Start 2P",monospace;line-height:1.5;cursor:pointer;box-shadow:0 3px 0 #592333}.inventory-card .sell-button:hover{filter:brightness(1.2)}
+/* Keep the full GPU artwork visible inside each card frame. */
+.gpu-5090,.gpu-cmp{background-size:contain;background-repeat:no-repeat;background-position:center}.product .gpu-image{object-fit:contain}
+.inventory-card .refund-button{width:100%;margin-top:10px;padding:9px 5px;border:0;background:#c98c36;color:#fff;font:8px "Press Start 2P",monospace;line-height:1.5;cursor:pointer;box-shadow:0 3px 0 #765022}.inventory-card .refund-button:hover{filter:brightness(1.2)}
+.gpu-3090{background:#0c0a14 linear-gradient(135deg,#3f6271 0 43%,#1b3442 43% 56%,#5c8b84 56%);border-color:#86b8b7}.gpu-v100{background:#0c0a14 linear-gradient(135deg,#6a832c 0 45%,#33471c 45% 58%,#9cb64a 58%);border-color:#b4ce56}@media(min-width:721px){.products{grid-template-columns:repeat(3,1fr)}}
+.product.featured{border-color:#3b3157;box-shadow:none}
+/* The reel must not expand the modal's grid track beyond the viewport. */
+.modal{grid-template-columns:minmax(0,1fr)}
+.modal-box{min-width:0}
+/* Image assets do not need the inset shading of the old CSS GPU drawings. */
+.gpu,.brick{background-color:transparent;background-size:contain;background-position:center;background-repeat:no-repeat;box-shadow:none;image-rendering:pixelated}
+.gpu:before,.brick:before{display:none}
+.gpu-5090{background-image:url("5090.png")}
+.gpu-4090{background-image:url("4090.png")}
+.gpu-3090{background-image:url("3090.png")}
+.gpu-v100{background-image:url("v100.png")}
+.gpu-3090,.gpu-v100{border-color:transparent}
+.gpu-a100{background-image:url("a100.png")}
+.brick{background-image:url("brick.png")}
+/* Shared shop presentation for every GPU model, including CMP. */
+.product,.product.featured{background:#151126;border:3px solid #3b3157;box-shadow:none}
+.product .gpu,.product .gpu-image{
+  display:block;width:100%;height:100px;flex:0 0 100px;
+  border:0;background-color:transparent;box-shadow:none;
+  background-size:contain;background-position:center;background-repeat:no-repeat;
+  object-fit:contain;image-rendering:pixelated;
+}
+.product h3{min-height:2.8em}
+.product p{min-height:2.1em;margin-bottom:16px}
+.product button:not(:disabled){background:var(--purple);box-shadow:0 4px 0 #33205e}
+/* Slot cells share one size so the center marker always frames one prize. */
+.slot-area{--slot-width:156px;--slot-height:108px;min-height:0;padding:8px 0}
+.slot-area p{margin:0 0 20px;line-height:1.8;color:var(--gold)}
+.slot-area small{display:block;line-height:1.8;color:var(--muted)}
+.slot-window{height:174px;margin:0 0 20px;border:2px solid #4d4071;background:#100d20;box-shadow:inset 0 0 24px #080713}
+.slot-window:before{inset:auto;left:50%;top:50%;width:calc(var(--slot-width) + 12px);height:calc(var(--slot-height) + 12px);transform:translate(-50%,-50%);border:2px solid var(--gold);background:transparent;box-shadow:0 0 14px #ffcc4620;pointer-events:none}
+.slot-window:after{top:7px;border-left-width:8px;border-right-width:8px;border-top-width:12px}
+.reel{gap:16px;padding:0 20px}
+.reel .gpu,.reel .brick{width:var(--slot-width);height:var(--slot-height);flex:0 0 var(--slot-width);border:1px solid #393158;background-color:#201a3b;background-size:calc(100% - 20px) auto;background-position:center;box-shadow:none}
+@media(max-width:720px){
+  .slot-area{--slot-width:120px;--slot-height:90px}
+  .slot-area p{font-size:9px;margin-bottom:16px}
+  .slot-window{height:150px;margin-bottom:16px}
+  .reel{gap:14px;padding:0 14px}
+}
+/* Inventory: consistent tiles with status accents and bottom-aligned actions. */
+.inventory-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,200px),1fr));gap:14px}
+.inventory .section-title{gap:12px;flex-wrap:wrap}
+.inventory #inventoryCount{padding:8px 10px;background:#151126;border:1px solid #393158}
+.inventory-grid .empty{grid-column:1/-1;margin:0;padding:32px 20px;text-align:center;line-height:1.4;background:#151126;border:2px dashed #393158}
+.inventory-card{--status:var(--mint);display:flex;flex-direction:column;width:auto;min-width:0;min-height:252px;padding:16px;border:2px solid #393158;border-top:3px solid var(--status);background:#151126;filter:none}
+.inventory-card.unstable-card{--status:var(--gold)}
+.inventory-card.junk-card{--status:#f28d72}
+.inventory-card.ewaste-card{--status:#ff8994;filter:none}
+.inventory-card .gpu,.inventory-card .brick{width:100%;height:96px;flex:0 0 96px;border:0;background-color:transparent;background-size:contain;box-shadow:none;margin-bottom:16px}
+.inventory-card h3{font-size:10px;line-height:1.7;margin:0 0 12px;color:#f8f4ff}
+.inventory-card p{align-self:flex-start;font-size:9px;line-height:1.7;padding:6px 8px;margin:0 0 16px;background:#201a3b;color:var(--status)}
+.inventory-card button.upgrade-button,.inventory-card button.sell-button,.inventory-card button.refund-button{margin-top:auto;min-height:42px;padding:10px 8px;font:9px/1.6 'Press Start 2P',monospace;background:var(--purple);box-shadow:0 3px 0 #33205e}
+.inventory-card button.sell-button,.inventory-card button.refund-button{background:#373047;box-shadow:0 3px 0 #211b30}
+.inventory-card button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+/* Shared dialog shell, results, decisions and diagnostics. */
+.modal{padding:24px;background:#080713e8;backdrop-filter:blur(6px)}
+.modal-box{width:min(620px,100%);max-height:calc(100vh - 48px);max-height:calc(100dvh - 48px);overflow:auto;padding:28px;border:2px solid #4d4071;border-top:4px solid var(--purple);background:linear-gradient(180deg,#201a3b,#151126);box-shadow:0 20px 64px #0009;text-align:center}
+.modal-message{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.modal-message .result-art{grid-column:1/-1;width:min(280px,100%);height:140px;margin:0 auto 8px;border:0;box-shadow:none;background-color:transparent;background-size:contain;background-position:center;background-repeat:no-repeat}
+.modal-message h2{grid-column:1/-1;margin:0;color:var(--gold);font-size:16px;line-height:1.7;overflow-wrap:anywhere}
+.modal-message p{grid-column:1/-1;width:100%;max-width:480px;margin:0 auto 16px;font-size:24px;line-height:1.35;color:#d8d0ee;overflow-wrap:anywhere}
+.modal-message button{width:100%;min-width:0;min-height:50px;margin:0;padding:14px 12px;font-size:10px;line-height:1.7;background:var(--purple);box-shadow:0 3px 0 #33205e}
+.modal-message:has(.secondary.hidden) #modalAction{grid-column:1/-1}
+.modal-message .secondary{display:block;margin:0;background:#302840;box-shadow:0 3px 0 #100d20;color:#e4ddf5}
+.modal button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.modal button:active{transform:translateY(2px);box-shadow:none}
+.terminal-area{margin:0;min-height:280px;border:1px solid #315542;background:#0c1712;box-shadow:none;font-size:20px}
+.terminal-head{display:flex;gap:12px;align-items:center;padding:14px 16px;background:#152a20;border-bottom:1px solid #315542;font-size:9px;line-height:1.7;color:#a3e9bc}
+.terminal-led{color:var(--mint)}
+.terminal-area pre{padding:20px 16px;line-height:1.5;overflow-wrap:anywhere}
+.modal-box .slot-area{padding:4px 0}
+@media(max-width:720px){
+  .modal{padding:12px}
+  .modal-box{padding:20px 16px;max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px)}
+  .modal-message{grid-template-columns:minmax(0,1fr)}
+  .modal-message .result-art{height:112px}
+  .modal-message h2{font-size:13px}
+  .modal-message p{font-size:22px;margin-bottom:10px}
+  .terminal-area{font-size:18px;min-height:260px}
+  .terminal-head{font-size:8px;padding:12px}
+  .terminal-area pre{padding:16px 12px}
+}
+@media(prefers-reduced-motion:reduce){.terminal-led,.terminal-area pre:after{animation:none}}
+.gpu-cmp-bad{background-image:url("bad-cmp170.png")}
+.ewaste-card .gpu-cmp-bad{opacity:1}
